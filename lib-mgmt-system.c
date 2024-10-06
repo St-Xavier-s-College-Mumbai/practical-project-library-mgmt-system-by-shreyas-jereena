@@ -106,7 +106,7 @@ void searchBook() {
 int main() {
     int choice;
     do {
-        printf("\n<<<<<<<<<<<<<<<<<<<< LIBRARY MANAGEMENT SYSTEM >>>>>>>>>>>>>>>>>>>>\n");
+        printf("\n<<<<<<<<<<<<<<<<<<<< LIBRARY MANAGEMENT SYSTEM >>>>>>>>>>>>>>>>>>>>>>>>\n");
 
         printf("\n\n ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  MAIN MENU  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n");
 
