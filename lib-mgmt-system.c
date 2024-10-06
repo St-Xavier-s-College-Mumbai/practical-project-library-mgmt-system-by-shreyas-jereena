@@ -20,7 +20,7 @@ void addBook() {
     }
     
     // Input book ID
-    printf("📖 Enter book ID: ");
+    printf("\n📖 Enter book ID: ");
     scanf("%d", &library[bookCount].id);
     
     // Input book title
