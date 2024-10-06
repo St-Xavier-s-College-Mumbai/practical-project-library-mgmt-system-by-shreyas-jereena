@@ -24,16 +24,16 @@ void addBook() {
     scanf("%d", &library[bookCount].id);
     
     // Input book title
-    printf("\n📖 Enter book title: ");
+    printf("📖 Enter book title: ");
     scanf(" %[^\n]", library[bookCount].title);
     
     // Input book author
-    printf("✍️ Enter book author: ");
+    printf("✍️  Enter book author:");
     scanf(" %[^\n]", library[bookCount].author);
     
     library[bookCount].isAvailable = 1; // Mark as available
     bookCount++;
-    printf("\n\n🎊🎉 Book added successfully! 🎉🎊\n\n");
+    printf("\n🎊🎉 Book added successfully! 🎉🎊\n");
 }
 
 void updateBookAvailability(const char* title, int issue) {
@@ -72,9 +72,9 @@ void listBooks() {
         return;
     }
     for (int i = 0; i < bookCount; i++) {
-        printf("\n📖 ID: %d\nTitle: %s\n✍️ Author: %s\n%s\n", 
+        printf("\nID: %d\nTitle: %s\nAuthor: %s\n%s\n", 
                library[i].id, library[i].title, library[i].author, 
-               library[i].isAvailable ? "Status : 🟢 Available" : "Status : 🔴 Issued");
+               library[i].isAvailable ? "Status : Available" : "Status : Issued");
     }
 }
 
