@@ -18,7 +18,6 @@ void addBook() {
         printf("\n📚✨ The Library is full! No space for more books! ✨📚\n");
         return;
     }
-    printf("\n🎉✨ Adding a New Book! ✨🎉\n");
     
     // Input book ID
     printf("📖 Enter book ID: ");
@@ -34,7 +33,7 @@ void addBook() {
     
     library[bookCount].isAvailable = 1; // Mark as available
     bookCount++;
-    printf("\n🎊🎉 Book added successfully! 🎉🎊\n");
+    printf("\n\n🎊🎉 Book added successfully! 🎉🎊\n\n");
 }
 
 void updateBookAvailability(const char* title, int issue) {
@@ -75,7 +74,7 @@ void listBooks() {
     for (int i = 0; i < bookCount; i++) {
         printf("\n📖 ID: %d\nTitle: %s\n✍️ Author: %s\n%s\n", 
                library[i].id, library[i].title, library[i].author, 
-               library[i].isAvailable ? "🟢 Available" : "🔴 Issued");
+               library[i].isAvailable ? "Status : 🟢 Available" : "Status : 🔴 Issued");
     }
 }
 
@@ -84,7 +83,7 @@ int main() {
     do {
         printf("\n🌟🌟🌟 WELCOME TO THE LIBRARY MANAGEMENT SYSTEM 🌟🌟🌟\n");
         printf("\n📋 Main Menu 📋\n");
-        printf("1. ➕ Add Book\n");
+        printf("\n1. ➕ Add Book\n");
         printf("2. 📤 Issue Book\n");
         printf("3. 📥 Return Book\n");
         printf("4. 🔍 Check Availability\n");
